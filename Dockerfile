@@ -15,5 +15,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   && chmod +x /usr/local/bin/kops /usr/local/bin/kubectl \
   && rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT ["/usr/local/bin/kops"]
-CMD ["--help"]
+CMD [ "/usr/local/bin/kops", "--help"]
